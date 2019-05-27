@@ -1,13 +1,11 @@
 # Pembahasan Soal Penyisihan Ideafuse 2019
 
 ## Soal A
----
 **Tags**: ad-hoc
 Soal ini bisa disebut soal bonus. Soal ini dikerjakan dengan mengurangkan 100 dengan jumlah dua bilangan input. Jika hasilnya kurang dari sama dengan 0 maka jawabannya adalah 0, selain itu jawabannya adalah hasil pengurangan tersebut.
 
 
 ## Soal B
----
 **Tags**: searching, graph-traversal
 Untuk pendekatan ini mungkin ada kesalahan karena kelompok kami belum sempat menyelesaikan soal ini saat lomba berlangsung. Soal ini dapat diselesaikan dengan *binary search* yang dikombinasikan dengan *breadth-first search*. Pada soal ini didefinisikan jarak sebagai jarak *euclidean*, dimana jarak dapat dihitung sebagai
     
@@ -28,7 +26,6 @@ Pada setiap tahap binary search, akan dihasilkan nilai tengah *mid*. Nilai *mid*
 
 
 ## Soal C
----
 **Tags**: ad-hoc
 Soal ini sebenarnya mudah, tetapi agak panjang kode yang diperlukan. Pertama-tama kita pisah string menjadi kumpulan karakter-karakter. Pada soal ini 'ng' juga dianggap sebagai sebuah karakter. 
 
@@ -38,13 +35,11 @@ Apabila ada karakter sebelah yang memiliki tipe yang sama dengan karakter sekara
 
 
 ## Soal D
----
 **Tags**: ad-hoc
 Untuk soal ini sebenarnya mudah, asalkan sudah ketemu aturan untuk meletakkan batunya. Kita lihat status setiap batu dari kiri sampai kanan. Jika batu di petak tersebut dan kanannya hilang, maka kita taruh batu di petak sebelah kanan. Jawaban dari soal ini adalah berapa banyak batu yang diletakkan.
 
 
 ## Soal E
----
 **Tags**: data-structure, min-heap
 Pada soal ini kita disuruh menyimulasi jalan proses di *environment* yang memiliki banyak prosesor. Kita diberikan input berupa jumlah prosesor, dan lama dari setiap proses untuk dikerjakan CPU. Kita hanya diminta untuk menyebutkan waktu yang diperlukan agar semua proses selesai dikerjakan. Aturan no 5 tidak relevan karena kita tidak diharuskan menyebut kapan dan prosesor mana yang mengerjakan proses apa.
 
@@ -53,7 +48,6 @@ Pada pendekatan pertama, kita inisialisasi array sebesar jumlah prosesor. Kita i
 Struktur data yang dapat mendukung operasi mengambil bilangan terkecil, dan mengubah datanya adalah *priority queue*. *Priority queue* dapat diimplementasikan dengan *heap*. Harga dari operasi mengambil bilangan terkecil adalah O(log n), dan harga dari operasi mengubah key adalah O(log n). Dengan *heap*, kompleksitas waktu dari algoritma ini menjadi O(n log n).
 
 ## Soal F
----
 **Tags**: math, geometry
 Kami menyelesaikan soal ini dengan menemukan korelasi input dan output. Untuk jumlah segitiga, hasilnya dapat dihitung dengan:
 
@@ -65,7 +59,6 @@ Dan untuk sisi dapat dihitung dengan:
 
 
 ## Soal H
----
 **Tags**: math, geometry
 Pada soal ini diberikan titik tengah lingkaran, radius lingkaran, dan kumpulan titik. Tujuan dari soal ini adalah mencari jarak terdekat untuk memindahkan semua titik agar berada di dalam lingkaran. Kita dapat menghitung jarak tersebut dengan menghitung jarak dari titik tersebut ke tepi lingkaran yang terdekat. Cara mencari jarak terdekat dapat dilihat di link [berikut](https://www.varsitytutors.com/hotmath/hotmath_help/topics/shortest-distance-between-a-point-and-a-circle). Untuk rumus yang ada di link sebelumnya, hasil akhirnya tidak perlu di absolutkan.
 
