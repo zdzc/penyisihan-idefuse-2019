@@ -2,7 +2,7 @@
 
 ## Soal A
 **Tags**: ad-hoc  
-Soal ini bisa disebut soal bonus. Soal ini dikerjakan dengan mengurangkan 100 dengan jumlah dua bilangan input. Jika hasilnya kurang dari sama dengan 0 maka jawabannya adalah 0, selain itu jawabannya adalah hasil pengurangan tersebut.
+Soal ini bisa disebut soal bonus. Soal ini dikerjakan dengan mengurangkan 100 dengan jumlah dua bilangan input. Jika hasilnya kurang dari sama dengan 0 maka jawabannya adalah 0, selain itu jawabannya adalah hasil pengurangan tersebut. Kompleksitas dari solusi ini adalah O(1).
 
 
 ## Soal B
@@ -33,10 +33,12 @@ Setelah itu, kita mengecek karakter-karakter tersebut dari kiri sampai kanan. Un
 
 Apabila ada karakter sebelah yang memiliki tipe yang sama dengan karakter sekarang, maka karakter sekarang akan diubah menjadi huruf besar. Jika tidak, maka karakter akan didiamkan saja.
 
+Kompleksitas dari solusi ini adalah O(n), dimana n adalah panjang string masukan.
+
 
 ## Soal D
 **Tags**: ad-hoc  
-Untuk soal ini sebenarnya mudah, asalkan sudah ketemu aturan untuk meletakkan batunya. Kita lihat status setiap batu dari kiri sampai kanan. Jika batu di petak tersebut dan kanannya hilang, maka kita taruh batu di petak sebelah kanan. Jawaban dari soal ini adalah berapa banyak batu yang diletakkan.
+Untuk soal ini sebenarnya mudah, asalkan sudah ketemu aturan untuk meletakkan batunya. Kita lihat status setiap batu dari kiri sampai kanan. Jika batu di petak tersebut dan kanannya hilang, maka kita taruh batu di petak sebelah kanan. Jawaban dari soal ini adalah berapa banyak batu yang diletakkan. Kompleksitas dari solusi ini adalah O(n), dimana n adalah jumlah batu.
 
 
 ## Soal E
@@ -57,9 +59,12 @@ Dan untuk sisi dapat dihitung dengan:
 
     2 * (jumlah_segitiga) + 1
 
+Kompleksitas dari solusi ini adalah O(1).
 
 ## Soal H
 **Tags**: math, geometry  
 Pada soal ini diberikan titik tengah lingkaran, radius lingkaran, dan kumpulan titik. Tujuan dari soal ini adalah mencari jarak terdekat untuk memindahkan semua titik agar berada di dalam lingkaran. Kita dapat menghitung jarak tersebut dengan menghitung jarak dari titik tersebut ke tepi lingkaran yang terdekat. Cara mencari jarak terdekat dapat dilihat di link [berikut](https://www.varsitytutors.com/hotmath/hotmath_help/topics/shortest-distance-between-a-point-and-a-circle). Untuk rumus yang ada di link sebelumnya, hasil akhirnya tidak perlu di absolutkan.
 
 Jika jarak tersebut negatif berarti titik tersebut berada di dalam lingkaran, sehingga kita abaikan saja. Jika jaraknya positif, kita tambahkan jarak tersebut ke total jaraknya.
+
+Kompleksitas dari solusi ini adalah O(n), dimana n adalah jumlah koordinat.
